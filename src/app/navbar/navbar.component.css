@@ -1,0 +1,15 @@
+.container {
+  width: 100%; /* Ancho máximo */
+  max-width: 960px; /* Ancho máximo para que el contenido no se expanda demasiado */
+  margin: 0 auto ; /* Centra el contenedor */
+}
+
+.navbar-nav {
+  width: 100%;
+  text-align: center; /* Centra los elementos dentro de la barra de navegación */
+  margin: 0 auto;
+}
+
+.nav-item {
+  display: inline-block; /* Muestra los elementos en línea */
+}

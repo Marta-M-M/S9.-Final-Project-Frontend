@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Edit Event</h2>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Title</mat-label>
+    <input matInput [(ngModel)]="data.event.title" name="title">
+  </mat-form-field>
+  <!-- Fields to edit start and end time -->
+  <mat-form-field appearance="fill">
+    <mat-label>Start</mat-label>
+    <input matInput type="datetime-local" [(ngModel)]="data.event.start" name="start">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>End</mat-label>
+    <input matInput type="datetime-local" [(ngModel)]="data.event.end" name="end">
+  </mat-form-field>
+  <mat-checkbox [(ngModel)]="data.event.delete" name="delete">Delete Event</mat-checkbox>
+</div>
+<div mat-dialog-actions>
+  <button mat-button class="cancel-btn" (click)="onNoClick()">Cancel</button>
+  <button mat-button class="save-btn" (click)="onSaveClick()" cdkFocusInitial>Save</button>
+</div>
